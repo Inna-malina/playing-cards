@@ -1,0 +1,329 @@
+* {
+    box-sizing: border-box
+}
+
+.wrapper {
+    position: relative;
+}
+
+.center-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+h2 {
+    text-align: center;
+    color: crimson;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boxes {
+    width: 800px;
+    height: 500px;
+    background-image: url('images/table.jpg');
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    justify-content: center;
+    align-content: center;
+}
+
+.btn {
+    position: absolute;
+    top: 47%;
+    left: 45%;
+    cursor: pointer;
+    display: flex;
+    width: 10%;
+    height: 14%;
+    border-radius: 5px;
+    margin: 0px auto;
+    text-transform: uppercase;
+    background-color: #f9bd3b;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    align-items: center;
+    justify-content: space-around;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 #f9bd3b;
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    }
+}
+
+.btn:hover {
+    background-color: #e9a513;
+}
+
+.btn:active {
+    background-color: #e9a513;
+    box-shadow: inset 0 0 6px #000000;
+}
+
+.boxes-clicks {
+    pointer-events: none;
+    display: none;
+}
+
+.noAct {
+    pointer-events: none;
+}
+
+.box, .percent-10, .percent-15, .percent-20, .percent-25, .percent-30, .percent-40, .percent-50, .percent-60 {
+    width: 100px;
+    height: 150px;
+    background-size: cover;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 20px 30px;
+    transition: all 0.5s ease-in-out;
+}
+
+.percent-10 {
+    background-image: url('images/10.jpg');
+    background-color: #d3623a;
+}
+
+.percent-15 {
+    background-image: url('images/15.jpg');
+    background-color: #fcb134;
+}
+
+.percent-20 {
+    background-image: url('images/20.jpg');
+    background-color: #2fcd70;
+}
+
+.percent-25 {
+    background-image: url('images/25.jpg');
+    background-color: #47ebe2;
+}
+
+.percent-30 {
+    background-image: url('images/30.jpg');
+    background-color: #0077c5;
+}
+
+.percent-40 {
+    background-image: url('images/40.jpg');
+    background-color: #8d45ab;
+}
+
+.percent-60 {
+    background-image: url('images/60.jpg');
+    background-color: #da3c77;
+}
+
+.percent-50 {
+    background-image: url('images/50.jpg');
+    background-color: #da3c77;
+}
+
+.box_shirt {
+    cursor: pointer;
+    background-image: url('images/shirt_two.jpg');
+    border: 3px solid rgb(0, 0, 0);
+    transform: scaleX(-1);
+}
+
+.hidden {
+    display: none;
+}
+
+.clock {
+    position: relative;
+    width: 15%;
+    margin: 0px auto;
+}
+
+.percent {
+    position: absolute;
+    background-color: orange;
+    padding: 20px;
+    top: 110px;
+    right: -55px;
+    transform: rotate(-35deg);
+}
+
+.img {
+    width: 100%;
+}
+
+input {
+    display: block;
+    width: 30%;
+    height: 46px;
+    border-radius: 3px;
+    margin: 10px auto;
+}
+
+button {
+    display: block;
+    width: 30%;
+    height: 46px;
+    border-radius: 3px;
+    margin: 10px auto;
+    background-color: rgb(255, 63, 29);
+    color: white;
+}
+
+form {
+    display: block;
+    background: scroll 0% 0%;
+}
+
+.boxes-clicks {
+    pointer-events: none;
+}
+
+.box-1 {
+    transform: translate(240%, 65%) scaleX(-1);
+}
+
+.box-2 {
+    transform: translate(80%, 65%) scaleX(-1);
+    ;
+}
+
+.box-3 {
+    transform: translate(-80%, 65%) scaleX(-1);
+}
+
+.box-4 {
+    transform: translate(-240%, 65%) scaleX(-1);
+}
+
+.box-5 {
+    transform: translate(240%, -62%) scaleX(-1);
+}
+
+.box-6 {
+    transform: translate(80%, -62%) scaleX(-1);
+}
+
+.box-7 {
+    transform: translate(-80%, -62%) scaleX(-1);
+}
+
+.box-8 {
+    transform: translate(-240%, -62%) scaleX(-1);
+}
+
+@media (max-width: 800px) {
+    .boxes {
+        width: 640px;
+        height: 360px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        justify-content: center;
+        align-content: center;
+    }
+    .box, .percent-10, .percent-15, .percent-20, .percent-25, .percent-30, .percent-40, .percent-50, .percent-60 {
+        width: 14%;
+        height: 127px;
+        background-size: cover;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 4px;
+        margin: 13px 23px;
+        transition: all 0.5s ease-in-out;
+    }
+    .box-1 {
+        transform: translate(240%, 60%) scaleX(-1);
+    }
+    .box-2 {
+        transform: translate(80%, 60%) scaleX(-1);
+        ;
+    }
+    .box-3 {
+        transform: translate(-78%, 60%) scaleX(-1);
+    }
+    .box-4 {
+        transform: translate(-238%, 60%) scaleX(-1);
+    }
+    .box-5 {
+        transform: translate(240%, -62%) scaleX(-1);
+    }
+    .box-6 {
+        transform: translate(80%, -61%) scaleX(-1);
+    }
+    .box-7 {
+        transform: translate(-79%, -61%) scaleX(-1);
+    }
+    .box-8 {
+        transform: translate(-185px, -74px) scaleX(-1);
+    }
+}
+
+@media (max-width: 640px) {
+    .boxes {
+        width: 360px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+        align-content: center;
+    }
+    .boxes-clicks {
+        pointer-events: none;
+    }
+    .box, .percent-10, .percent-15, .percent-20, .percent-25, .percent-30, .percent-40, .percent-50, .percent-60 {
+        width: 14%;
+        height: 70px;
+        background-size: cover;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 3px;
+        margin: 6px 12px;
+        transition: all 0.5s ease-in-out;
+    }
+    .btn {
+        position: absolute;
+        top: 51%;
+        left: 40%;
+        cursor: pointer;
+        display: flex;
+        width: 20%;
+        height: 14%;
+    }
+    .box-1 {
+        transform: translate(230%, 60%) scaleX(-1);
+    }
+    .box-2 {
+        transform: translate(75%, 60%) scaleX(-1);
+        ;
+    }
+    .box-3 {
+        transform: translate(-78%, 60%) scaleX(-1);
+    }
+    .box-4 {
+        transform: translate(-230%, 60%) scaleX(-1);
+    }
+    .box-5 {
+        transform: translate(230%, -58%) scaleX(-1);
+    }
+    .box-6 {
+        transform: translate(76%, -57%) scaleX(-1);
+    }
+    .box-7 {
+        transform: translate(-79%, -58%) scaleX(-1);
+    }
+    .box-8 {
+        transform: translate(-103px, -40px) scaleX(-1);
+    }
+}
